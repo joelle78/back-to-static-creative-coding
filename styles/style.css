@@ -65,10 +65,18 @@ li {
    color: red;
 }
 
+
+
+
+
 .title-3:hover + .wrapper-spider  {
     visibility: visible;
+
 }
 
+.title-3:hover + .wrapper-spider-2 {
+
+}
 
 .wrapper-spider {
     width:60%;
@@ -76,6 +84,31 @@ li {
     padding-bottom:20%;
     position: absolute;
     visibility: hidden;
+
+}
+
+.iframe-spider {
+    width: 70%;
+    height: 70%;
+    transform: rotate(90deg);
+}
+
+.iframe-spider-2 {
+    width: 50%;
+    height: 50%;
+}
+
+.iframe-spider-2 {
+    width: 15%;
+    height: 15%;
+    transform: rotate(60deg);
+}
+
+.iframe-spider-4 {
+    width: 80%;
+    height: 80%;
+    right: 50%;
+    transform: rotate(30deg);
 }
 
 
