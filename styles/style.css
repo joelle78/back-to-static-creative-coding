@@ -93,7 +93,6 @@ li {
     font-family: eater;
 }
 
-
 .title-1:hover + .wrapper-spooky {
     visibility: visible;
 }
@@ -174,6 +173,78 @@ li {
     transform: rotate(30deg);
 }
 
+/* SPIKE 2 */
+body {
+    background-color: #fae9c3;
+}
+
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 2em;
+    padding-left: 0em;
+    z-index: 500;
+    background-color: #4e7141;
+
+}
+
+nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 500;
+    height: 10vh;
+    padding-left: 0;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+}
+
+:is(.menu-item.active) {
+    color: var(	--background-color-light);
+    font-weight: 400;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 50px;
+}
+
+li {
+    transition: 0.2s;
+    list-style: none;
+}
+
+.menu-item:hover {
+    color: var(	--background-color-light);
+}
+
+svg {
+    margin-top: 1em;
+    width: 20rem;
+    margin-left: 0em;
+}
+
+.mobile-none {
+    display: none;
+}
 
 
 
