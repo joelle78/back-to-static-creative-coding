@@ -1,25 +1,23 @@
-// Function to play a sound and rotate the card continuously for 9 seconds
 function playClickSound() {
-    var audio = new Audio('assets/yodeling.mp3');
+    const audio = new Audio('assets/yodeling.mp3');
     audio.play();
 
-    var card = document.querySelector('.card');
-    var rotationInterval;
-    var rotationDuration = 9000; // 9 seconds
+    let card = document.querySelector('.card');
+    let rotationInterval;
+    const rotationDuration = 9000;
 
-    // Start continuous rotation
+    // Start rotation
     rotationInterval = setInterval(function() {
         card.style.transform = card.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)';
-    }, 1500); // Rotate every 1 second
+    }, 1500);
 
-    // Stop continuous rotation after 9 seconds
+    // Stopt rotation after 9 seconds
     setTimeout(function() {
         clearInterval(rotationInterval);
     }, rotationDuration);
 }
 
-// Add a click event listener to the first list item
-var firstListItem = document.getElementById('playSound');
+const firstListItem = document.getElementById('playSound');
 firstListItem.addEventListener('click', playClickSound);
 
 
