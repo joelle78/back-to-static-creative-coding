@@ -3,6 +3,10 @@ body {
     background-color: #fae9c3;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 .header-wrapper {
     position: fixed;
     top: 0;
@@ -118,5 +122,17 @@ svg {
     margin-top: 1em;
     width: 20rem;
     margin-left: 0em;
+}
+
+.main-spike-2 {
+    margin-top: 45rem;
+    margin-left: 5rem;
+}
+
+a {
+    font-family: mulish;
+    list-style: none;
+    text-decoration: none;
+    color: black;
 }
 
