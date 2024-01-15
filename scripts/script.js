@@ -20,6 +20,12 @@ function playClickSound() {
 const firstListItem = document.getElementById('playSound');
 firstListItem.addEventListener('click', playClickSound);
 
+// HAMBURGER MENU
+document.querySelector('.menu-icon').addEventListener('click', function () {
+    document.querySelector('ul').classList.toggle('show');
+});
+
+
 
 
 

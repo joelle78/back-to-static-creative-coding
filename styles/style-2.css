@@ -51,6 +51,12 @@ nav {
     padding-left: 0;
 }
 
+/* Hamburger menu icon */
+.menu-icon {
+    display: none; /* Hide by default on larger screens */
+    cursor: pointer;
+}
+
 /* CARD FLIP */
 .card-container {
     perspective: 1000px;
@@ -89,9 +95,6 @@ nav {
     text-align: center;
 }
 
-.card-content img {
-    width: 13rem;
-}
 
 /* li items nav bar */
 .menu-item {
@@ -136,3 +139,55 @@ a {
     color: black;
 }
 
+@media only screen and (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card-content img {
+        width: 10rem;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 1.5em;
+        color: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15px;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 7.4vh;
+        left: 0;
+        width: 100%;
+        background-color: rgba(78, 113, 65, 0.9);
+    }
+
+    ul.show {
+        display: flex;
+    }
+
+    ul li {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #394f2a;
+    }
+
+    ul li:last-child {
+        border-bottom: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .card-content svg {
+        width: 60%;
+        padding-right: 5rem;
+    }
+}
