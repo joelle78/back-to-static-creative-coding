@@ -53,7 +53,7 @@ nav {
 
 /* Hamburger menu icon */
 .menu-icon {
-    display: none; /* Hide by default on larger screens */
+    display: none;
     cursor: pointer;
 }
 
