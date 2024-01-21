@@ -1,8 +1,7 @@
-
-
 body {
     margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Prevent scrolling */
+
 }
 
 main {
@@ -68,6 +67,7 @@ label:active:after {
     width: 130px;
 }
 
+/* FAST FOOD IMAGES */
 .hamburger img {
     position: absolute;
     top: 65%;
@@ -106,9 +106,25 @@ label:active:after {
 
 .hotdog-image img {
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: -15%;
     z-index: 2;
     width: 15%;
     height: 20%;
+}
+
+/* Styles for tablet */
+@media screen and (max-width: 768px) {
+    .toggle {
+        left: 35%;
+        transform: scale(0.5);
+    }
+}
+
+/* Media query for mobile  */
+@media screen and (max-width: 767px) {
+    .toggle {
+        left: 25%;
+        transform: scale(0.25);
+    }
 }
