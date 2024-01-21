@@ -30,9 +30,12 @@ input[type=checkbox]{
     visibility: hidden;
 }
 
+input:checked + label {
+    background: #bada55;
+}
+
 label {
     cursor: pointer;
-    text-indent: -9999px;
     width: 200px;
     height: 100px;
     background: grey;
@@ -42,20 +45,14 @@ label {
 }
 
 label:after {
-    content: "";
+    content: "💎"; /* Diamond emoji */
+    font-size: 100px; /* Adjust font size as needed */
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: -30px;
+    left: -30px;
     width: 90px;
     height: 90px;
-    background: #fff;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    transition: 0.3s;
-
-}
-
-input:checked + label {
-    background: #bada55;
+    transition: 0.5s;
 }
 
 input:checked + label:after {
