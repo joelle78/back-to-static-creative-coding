@@ -1,0 +1,114 @@
+
+
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+main {
+    position: relative;
+}
+
+main img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+/* TOGGLE */
+.toggle {
+    position: absolute;
+    top: 0;
+    left: 43%;
+    z-index: 2;
+}
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 200px;
+    height: 100px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: 0.3s;
+
+}
+
+input:checked + label {
+    background: #bada55;
+}
+
+input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 130px;
+}
+
+.hamburger img {
+    position: absolute;
+    top: 65%;
+    left: 8%;
+    z-index: 2;
+    width: 15%;
+    height: 15%;
+}
+
+.pizza img {
+    position: absolute;
+    top: 65%;
+    left: 80%;
+    z-index: 2;
+    width: 15%;
+    height: 15%;
+}
+
+.ice-cream img {
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    z-index: 2;
+    width: 15%;
+    height: 20%;
+}
+
+.fries-image img {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    z-index: 2;
+    width: 15%;
+    height: 20%;
+}
+
+.hotdog-image img {
+    position: absolute;
+    top: 80%;
+    left: -15%;
+    z-index: 2;
+    width: 15%;
+    height: 20%;
+}
