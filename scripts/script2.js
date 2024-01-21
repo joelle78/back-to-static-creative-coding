@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     checkbox.addEventListener("change", function () {
         if (this.checked) {
-            // Start the GSAP dance animation for hamburger
+
+            // GSAP dance animation for hamburger
             hamburgerAnimation = gsap.to(hamburgerImg, {
                 yoyo: true,
                 repeat: -1,
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 ]
             });
 
-            // Start the GSAP dance animation for pizza
+            // GSAP dance animation for pizza
             pizzaAnimation = gsap.to(pizzaImg, {
                 yoyo: true,
                 repeat: -1,
@@ -43,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 ]
             });
 
-            // Start the GSAP up-and-down animation for ice cream
+            // GSAP up-and-down animation for ice cream
             iceCreamAnimation = gsap.to(iceCreamImg, {
                 y: -100,
                 ease: "power2.out",
@@ -52,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 duration: 1
             });
 
-            // Start the GSAP dance animation for fries
+            // GSAP dance animation for fries
             friesAnimation = gsap.to(friesImg, {
                 yoyo: true,
                 repeat: -1,
